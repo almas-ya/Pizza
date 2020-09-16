@@ -1,0 +1,734 @@
+@import 'fonts.css';
+
+/* =========================== ROOT start =============================== */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'MR';
+    font-weight: 400;
+    color: var(--white);
+}
+:root {
+    --grey: #bdbdbd;
+    --white: #fff;
+    --skid_bg: #68cd16;
+    --menu_title: rgba(104, 205, 22, 0.2);
+    --grey_combo: #a6a6a6;
+    --green: #68bf3b;
+    --col_1: calc(100%/12);
+    --col_2: calc(100%/12*2);
+    --col_3: calc(100%/12*3);
+    --col_4: calc(100%/12*4);
+    --col_5: calc(100%/12*5);
+    --col_6: calc(100%/12*6);
+    --col_7: calc(100%/12*7);
+    --col_8: calc(100%/12*8);
+    --col_9: calc(100%/12*9);
+    --col_10: calc(100%/12*10);
+    --col_11: calc(100%/12*11);
+    --col_12: calc(100%/12*12);
+}
+.col-1 {
+    width: var(--col_1);
+    padding: 0 15px;
+}
+.col-2 {
+    width: var(--col_2);
+    padding: 0 15px;
+}
+.col-3 {
+    width: var(--col_3);
+    padding: 0 15px;
+}
+.col-4 {
+    width: var(--col_4);
+    padding: 0 15px;
+}
+.col-5 {
+    width: var(--col_5);
+    padding: 0 15px;
+}
+.col-6 {
+    width: var(--col_6);
+    padding: 0 15px;
+}
+.col-7 {
+    width: var(--col_7);
+    padding: 0 15px;
+}
+.col-8 {
+    width: var(--col_8);
+    padding: 0 15px;
+}
+.col-9 {
+    width: var(--col_9);
+    padding: 0 15px;
+}
+.col-10 {
+    width: var(--col_10);
+    padding: 0 15px;
+}
+.col-11 {
+    width: var(--col_11);
+    padding: 0 15px;
+}
+.col-12 {
+    width: var(--col_12);
+    padding: 0 15px;
+}
+.col {
+    width: auto;
+    padding: 0 15px;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-items-start {
+    align-items: flex-start;
+}
+.align-items-end {
+    align-items: flex-end;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-grow-1 {
+    flex-grow: 1;
+}
+.d-flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.mh-100 {
+    min-height: 100vh;
+}
+/* =========================== ROOT end ===============================*/
+
+/* =========================== HEADER start ===========================*/
+.header {
+    background: url(../img/header_bg.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+.nav {
+    margin-top: 30px;
+}
+.logo {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.phone__title {
+    font-size: 24px;
+    margin-right: 50px;
+}
+.phone__link {
+    background: var(--green);
+    padding: 19px 26px 17px;
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 11px;
+}
+.header__info {
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.header__title {
+    font-weight: 900;
+    font-size: 72px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.header__price {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.header__price-menu {
+    font-weight: 400;
+    font-size: 16px;
+    background: linear-gradient(#6ad017, #3d8601);
+    padding: 15px 44px;
+    border-radius: 25px;
+}
+/* =========================== HEADER end ====================================*/
+
+/* =========================== TOTTI start ===================================*/
+.technology {
+    margin: 50px 0 82px 0;
+}
+.technology__title {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--green);
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+.technology__info {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--grey);
+    line-height: 36px;
+}
+.technology-info__count {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--grey);
+}
+.author__title {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--grey);
+    margin-right: 62px;
+}
+/* =========================== TOTTI end ====================================*/
+
+/* =========================== PIZZA SKID start =============================*/
+.menu__title {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--menu_title);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.pizza {
+    position: relative;
+}
+.pizza__img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.pizza__skid {
+    position: absolute;
+    background: var(--green);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 30px;
+    left: 30px;
+}
+.pizza__title {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--grey_combo);
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.pizza__info span {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--grey_combo);
+    line-height: 24px;
+    display: block;
+}
+.pizza-zak__title {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--grey_combo);
+    margin-bottom: 23px;
+    text-align: right;
+}
+.pizza-zak__count {
+    font-weight: 100;
+    font-size: 18px;
+    color: var(--grey_combo);
+    margin-left: 10px;
+}
+.pizza-price__menu {
+    background: linear-gradient(#6ad017, #3d8601);
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 15px 44px;
+}
+.pizza__content {
+    width: 350px;
+}
+.daughtor {
+    margin-bottom: 50px;
+}
+/* =========================== PIZZA SKID end ============================*/
+
+/* =========================== GIRLS start ===============================*/
+.girls {
+    margin: 100px 0;
+}
+.girls__info {
+    text-align: center;
+}
+.girl__title {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--grey_combo);
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+.girl__description {
+    font-size: 14px;
+    color: var(--grey_combo);
+    line-height: 24px;
+}
+.girls__img {
+    margin-bottom: 28px;
+}
+/* =========================== GIRLS end ===============================*/
+
+/* =========================== FOOTER start ============================*/
+.footer {
+    background: #000;
+    padding: 30px 0 53px;
+}
+.copyright__title {
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: 48px;
+    text-align: center;
+}
+/* =========================== FOOTER end ==============================*/
+
+/* =========================== MEDIA start==============================*/
+@media(max-width:1160px) {
+    .header {
+        width: 100%;
+    }
+    .header__content {
+        padding: 25px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .girls {
+        width: 100%;
+    }
+    .girls__img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .footer {
+        width: 100%;
+    }
+}
+@media(max-width:1090px) {
+    .header {
+        width: 100%;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .phone__title {
+        font-size: 20px;
+    }
+    .phone__link {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .pizza__anonse{
+        padding: 0;
+    }
+    .technology {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .technology__content {
+        margin-top: 20px;
+    }
+    .daughtor {
+        flex-direction: column;
+        margin-bottom: 50px;
+        max-width: 80%;
+        width: 100%;
+    }
+    .girls {
+        width: 100%;
+    }
+    .girls__img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .pizza__anonse {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .pizza-article {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    .pizza__title {
+        font-size: 25px;
+    }
+    .pizza__zak {
+        margin-top: 20px;
+    }
+    .pizza-zak__title {
+        text-align: left;
+        font-size: 20px;
+    }
+    .pizza-price__menu {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .copyright__title {
+        font-size: 14px;
+    }
+}
+@media(max-width:880px) {
+    .header__price-menu{
+       padding: 15px 30px;
+       font-size: 15px;
+    }
+    .totti{
+        display: flex;
+        justify-content: center;
+    }
+    .technology__title {
+        font-size: 30px;
+    }
+    .technology__info {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .author__signature {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+    }
+    .girls__img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+@media(max-width:800px) {
+    .pizza__anonse {
+        display: block;
+    }
+    .daughtor {
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .technology__title{
+        font-size: 25px;
+    }
+    .menu__title{
+        margin-bottom: 0;
+    }
+}
+@media(max-width:700px) {
+    .header__title{
+        font-size: 50px;
+    }
+    .header__content{
+        align-items: center;
+    }
+    .pizza__menu{
+        width: 100%;
+        padding: 0;
+    }
+    .pizza-article{
+        padding: 0;
+    }
+    .technology__title{
+        font-size: 25px;
+    }
+    .technology__info{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .technology-info__count{
+        font-size: 16px;
+    }
+    .author__title{
+        font-size: 20px;
+    }
+    .author__signature{
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+    }
+    .menu__title{
+        text-align: center;
+    }    
+    .girls {
+        margin: 50px 0;
+        display: block;
+    }
+    .girls__content{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .girls__anonse {
+        display: block;
+    }
+    .girls__info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .girls__article {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .girl__title {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .girl__description {
+        font-size: 14px;
+        color: var(--grey_combo);
+        line-height: normal;
+        width: 100%;
+    }
+    .girls__img{
+        margin: 0;
+    }
+    .invest{
+        flex-direction: column;
+    }
+    .invest > div{
+        flex-direction: column;
+    }
+    .logo{
+        margin-right: 0;
+    }
+    .phone__title{
+        margin: 10px 0;
+    }
+    .totti{
+        width: 100%;
+    }
+    .technology{
+        margin: 0;
+    }
+}
+@media(max-width:650px){
+    .header__title{
+       font-size: 50px;
+    }
+    .header__info{
+        font-size: 16px;
+    }
+    .header__price{
+        margin-bottom: 35px;
+    }
+    .header__price-menu{
+        font-size: 13px;
+        padding: 10px;
+    }
+    .pizza__menu{
+        width: 100%;
+        padding: 0;
+    }
+    .pizza-article{
+        width: 100%;
+        padding: 0;
+    }
+    .totti{
+        margin: auto;
+    }
+    .technology__title{
+        font-size: 20px;
+    }
+    .author__title{
+        font-size: 18px;
+    }
+    .invest{
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .phone__link{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .copyright__title{
+        font-size: 13px;
+    }
+    .pizza__info span{
+        font-size: 12px;
+    }
+}
+@media(max-width:590px){
+    .header{
+        width: 100%;
+    }
+    .pizza__menu{
+        padding: 0;
+    }
+    .pizza-article{
+        padding: 0;
+    }
+    .footer{
+        width: 100%;;
+    }
+}
+@media(max-width:520px){
+    .header{
+        width: 100%;
+    }
+    .technology__title{
+        font-size: 16px;
+    }
+    .technology__info{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .author__title{
+        font-size: 16px;
+    }
+    .pizza__title{
+        font-size: 20px;
+    }
+    .pizza__info span{
+        font-size: 12px;
+    }
+    .pizza__skid{
+        width: 40px;
+        height: 40px;
+        top: 20px;
+        left: 20px;
+        font-size: 12px;
+    }
+    .pizza__content{
+        width: 300px;
+    }
+    .footer{
+        width: 100%;
+    }
+}
+@media(max-width:490px){
+    .header{
+        width: 100%;
+    }
+    .header__title{
+        font-size: 40px;
+    }
+    .header__price{
+        font-size: 16px;
+    }
+    .totti__img{
+        width: 300px;
+        object-fit: cover;
+    }
+    .author__title{
+        font-size: 14px;
+    }
+    .pizza__anonse{
+        padding: 0;
+    }
+    .pizza-price__menu{
+        padding: 10px;
+    }
+    .pizza__content{
+        width: 280px;
+    }
+    .girl__title{
+        font-size: 12px;
+    }
+    .girl__description{
+        font-size: 13px;
+    }
+    .footer{
+        width: 100%;
+    }
+}
+
+@media(max-width:460px){
+    .header{
+        width: 100%;
+    }
+    .author__title{
+        font-size: 13px;
+    }
+    .totti__img{
+        width: 270px;
+        object-fit: cover;
+    }
+    .daughtor{
+        padding: 0px;
+    }
+    .pizza__anonse{
+        padding: 0;
+    }
+    .pizza__menu{
+        padding: 0;
+    }
+    .pizza__content{
+        width: 250px;
+    }
+    .footer{
+        width: 100%;
+    }
+}
+
+@media(max-width:410px){
+    .header{
+        width: 100%;
+    }
+    .technology__content{
+        width: 100%;
+        text-align: center;
+    }
+    .author{
+        justify-content: center;
+    }
+    .author__title{
+        font-size: 13px;
+        margin-right: 20px;
+    }
+    .menu__title{
+        margin: 20px 0 0 0;
+    }
+    .daughtor{
+        margin-top: 20px;
+    }
+    .technology__title{
+        font-size: 14px;
+    }
+    .pizza-zak__title{
+        font-size: 16px;
+    }
+    .pizza-price__menu{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .girls__info{
+        display: block;
+    }
+    .footer{
+        width: 100%;
+    }
+}
+/* =========================== MEDIA end ================================*/
